@@ -1,6 +1,8 @@
 class ComplaintsController < ApplicationController
   before_action :set_complaint, only: %i[ show edit update destroy ]
 
+  before_action :authenticate_user!
+
   # GET /complaints or /complaints.json
   def index
     @complaints = Complaint.all
