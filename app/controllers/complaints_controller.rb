@@ -51,6 +51,8 @@ class ComplaintsController < ApplicationController
 
   # DELETE /complaints/1 or /complaints/1.json
   def destroy
+    authorize! :destroy, @complaint
+
     @complaint.destroy
 
     respond_to do |format|
