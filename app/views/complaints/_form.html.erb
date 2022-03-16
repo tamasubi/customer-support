@@ -31,6 +31,11 @@
     <%= form.text_field :status %>
   </div>
 
+  <div class="field">
+  <%= form.label :files %>
+  <%= form.file_field :files, multiple: true, direct_upload: true %>
+</div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
