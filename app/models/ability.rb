@@ -5,6 +5,8 @@ class Ability
 
   def initialize(user)
     can :manage, Complaint
-    cannot :destroy, Complaint, top_priority: true
+
+    cannot :destroy, Complaint
+    can :destroy, Complaint, user_id: user.id
   end
 end
