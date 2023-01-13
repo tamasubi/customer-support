@@ -1,24 +1,9 @@
-# README
+To get started with the app, clone the repo and then install the needed gems:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+$ gem install bundler -v 2.2.17
 
-Things you may want to cover:
+$ bundle 2.2.17 install Next, migrate the database:
 
-* Ruby version
+$ rails db:migrate
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+$ rails server
